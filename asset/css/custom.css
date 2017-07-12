@@ -1,0 +1,372 @@
+/*
+|===== Start CSS Added by Hori Revens =====
+*/
+.cst_table{
+  width: 100%;
+  margin-bottom: 1px;
+}
+.cst_table th, .cst_table td{
+  padding: 4px;
+  line-height: 18px;
+  text-align: left;
+  vertical-align: top;
+}
+.table-striped td{
+    text-indent: 5px;
+}
+.table-striped th{
+  text-align: left;
+  text-indent: 5px;
+  line-height: 20px;
+  color: white;
+  background-color: #393939;
+  background-image: -moz-linear-gradient(top, #454545, #262626);
+  background-image: -ms-linear-gradient(top, #454545, #262626);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#454545), to(#262626));
+  background-image: -webkit-linear-gradient(top, #454545, #262626);
+  background-image: -o-linear-gradient(top, #454545, #262626);
+  background-image: linear-gradient(top, #454545, #262626);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#454545', endColorstr='#262626', GradientType=0);
+  border-color: #262626 #262626 #000000;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.cst_footer{
+    height: 16px;
+    color: lightgray;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.cst_thumbnail {
+    display: block;
+    padding: 4px;
+    line-height: 1;
+    height: 255px;
+    text-align: center;
+    border: 1px solid #ddd;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.cst_herounit {
+  padding-left: 10px;
+  padding-bottom: 30px;
+  padding-right: 10px;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  background-image: url(../img/php-kediri.png);
+  background-size: 1220px;
+  height: 450px;
+  background-position: top center;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+/*
+|===== End CSS Added by Hori Revens =====
+*/
+
+
+
+
+
+#footer{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    text-align: center;
+    background-color: whitesmoke;
+}
+#cl_header{
+    background-color: lightgrey;
+    /*text-align: center;*/
+}
+#div_menu{
+    background-color: whitesmoke;
+}
+#div_top_btn{
+    background-color:whitesmoke;
+    padding-top: 3px;
+    padding-left: 5px;
+    height: 25px;
+}
+#div_page_title{
+    background-color: #3a87ad;
+    /*background-image: url("../pics/bg1.png");*/
+    color: white;
+    font-family: Arial;
+    font-size: 15px; 
+    font-weight: bold;
+    height: 20px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+#div_header{
+    /*background-color: green;*/
+    background-image: url("../pics/header.png");
+    color: white;
+    font-family: Palatino Linotype;
+    font-size: 14px; 
+    height: 60px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+#div_searching{
+    vertical-align: middle;
+    margin-bottom: -2em;    
+    padding: 5px 5px 5px 5px;
+}
+#content{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: white;
+    margin-top: 0em;
+}
+#tabel_zebra th {
+    background-color: green;
+    color: white;
+}
+#layar_kasir{
+    padding-top: 40px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: black;
+    color: #0F0;
+    font-family: Verdana;
+    font-size: 100px;
+    text-align: right;
+    height: 60px;
+}
+#list_item_pos{
+    
+}
+.dialog_modal{
+    width: 700px;
+    height: 500px;
+}
+.txt_notif{
+    text-align: center;
+    color: green;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+.SmallFont {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+}
+.VerySmallFont {
+	font-family: Arial;
+	font-size: 8px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+}
+.JudulVerdana3 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+.JudulVerdana2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+.JudulVerdana4 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 20px;
+}
+.JudulVerdana5 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 30px;
+}
+.JudulBIG {
+	font-family: Haettenschweiler;
+	font-size: 36px;
+}.JudulArialBig {
+	font-family: Arial;
+	font-size: 40px;
+}
+.JudulHargaPOS {
+	font-family: "Century Gothic";
+	font-size: 50px;
+        text-align:right; 
+        background-color:#000; 
+        color:#0F0;
+        width: 950px;
+        height: 50px;
+}
+.HargaLabelRak {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 20px;
+}
+.KotakBolongBawah {
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-top-color: #000000;
+	border-right-color: #000000;
+	border-bottom-color: #000000;
+	border-left-color: #000000;
+}
+.KotakBolongKiriBawah {
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-top-color: #000000;
+	border-right-color: #000000;
+	border-bottom-color: #000000;
+	border-left-color: #000000;
+}
+.KotakBolongAtasKanan {
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: none;
+	border-top-color: #000000;
+	border-right-color: #000000;
+	border-bottom-color: #000000;
+	border-left-color: #000000;
+	border-bottom-style: solid;
+	border-left-style: solid;
+
+}
+.KotakBolongAtasKiri {
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: solid;
+	border-top-color: #000000;
+	border-right-color: #000000;
+	border-bottom-color: #000000;
+	border-left-color: #000000;
+	border-bottom-style: solid;
+	border-left-style: none;
+}
+.KotakBolongKananKiri {
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: none;
+	border-top-color: #000000;
+	border-right-color: #000000;
+	border-bottom-color: #000000;
+	border-left-color: #000000;
+	border-bottom-style: solid;
+	border-left-style: none;
+}
+.KotakBolongAtasBawahKiri {
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #000066;
+}
+.KotakBolongAtasKananKiri {
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: none;
+	border-top-color: #000000;
+	border-right-color: #000000;
+	border-bottom-color: #000000;
+	border-left-color: #000000;
+	border-bottom-style: solid;
+	border-left-style: none;
+}
+.KotakBolongBawahKananKiri {
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: none;
+	border-top-color: #000000;
+	border-right-color: #000000;
+	border-bottom-color: #000000;
+	border-left-color: #000000;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+.KotakGray {
+	border: 1px solid #999999;
+}
+.zebra{
+    background-color:#f4fef3
+}
+.zebra2{
+    background-color:#d6fed2
+}
+.align_left{
+    text-align: left;
+}
+.align_right{
+    text-align: right;
+}
+.align_center{
+    text-align: center;
+}
+.valign_middle{
+    vertical-align: middle;
+}
+.filter_lap{
+    width: 600px;
+}
+.header{
+  /*padding: 2px 4px 3px;*/
+  font-size: 11px;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color:black;
+}
+
+.InputBayarPOS {
+	font-family: "Arial";
+	font-size: 40px;
+        text-align:right; 
+        background-color:white; 
+        color:black;
+        height: 40px;;
+        width: 250px
+}
+.cl_font_red{
+    color: red;
+}
+.cl_font_blue{
+    color: blue;
+}
+.popup_title{
+    font-family: "Arial";
+    font-size: 15px;
+    text-align:left; 
+    background-color:black; 
+    color:white;
+    padding: 5px;
+}
