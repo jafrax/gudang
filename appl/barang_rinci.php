@@ -141,14 +141,14 @@
                     {   
                         // Rename file
                         $newfilename = md5($file_basename) . $file_ext;
-                        if (file_exists("/home/ubuntu/www/gudang/upload/" . $newfilename))
+                        if (file_exists("/home/ubuntu/www/produk_image/" . $newfilename))
                         {
                             // file already exists error
                             echo "You have already uploaded this file.";
                         }
                         else
                         {       
-                            move_uploaded_file($_FILES["file"]["tmp_name"], "/home/ubuntu/www/gudang/upload/" . $newfilename);
+                            move_uploaded_file($_FILES["file"]["tmp_name"], "/home/ubuntu/www/produk_image/" . $newfilename);
                             echo "File uploaded successfully."; 
 
                               try {
@@ -197,8 +197,8 @@
                     $statement->execute(); $i=1;
                     while ($row = $statement->fetch()) { 
                       $img = $row['image'];
-                      $link = $addr_server."upload/".$img;
-                      // echo $link;
+                      $link = $addr_server_image+$img;
+                      echo $link;
                       echo "
                       <img onmouseover='preview.src=img$i.src' name='img$i' src='$link' alt=''/>
                             ";
