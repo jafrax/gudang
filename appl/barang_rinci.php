@@ -197,8 +197,8 @@
                     $statement->execute(); $i=1;
                     while ($row = $statement->fetch()) { 
                       $img = $row['image'];
-                      $link = $addr_server_image+$img;
-                      echo $link;
+                      $link = $addr_server_image."".$img;
+                      // var_dump($link);
                       echo "
                       <img onmouseover='preview.src=img$i.src' name='img$i' src='$link' alt=''/>
                             ";
