@@ -23,7 +23,7 @@ $addr_root_validation_engine = 'http://'.$_SERVER['HTTP_HOST'].'/gudang/asset/va
 $addr_server = 'http://'.$_SERVER['HTTP_HOST'].'/gudang/';
 $server_name = $_SERVER['HTTP_HOST'].'/gudang/';
 
-$addr_server_image = 'http://'.$_SERVER['HTTP_HOST'].'/produk_image/';
+$addr_server_image = 'http://'.$_SERVER['HTTP_HOST'].'/produk_image';
 
 
 if($_SERVER['HTTP_REFERER']==''){
