@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
    <head>
@@ -71,9 +70,6 @@
 
              </div>
          </div>
-
-
-
          <!-- START TABEL DATA -->
     </div><br>
     <?php include $doc_root.'footer.php';?>

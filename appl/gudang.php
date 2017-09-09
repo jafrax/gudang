@@ -83,23 +83,4 @@
     <?php include $doc_root.'footer.php';?>
     <?php include $doc_root.'bs_js.php';?>
   </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </html>

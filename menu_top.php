@@ -26,7 +26,6 @@
 <li><a href="<?php echo $addr_server;?>logout.php">Logout</a></li>
 </ul>
 </nav>
-<<<<<<< HEAD
 
 <!-- <div id="navcontainer">
 <label class="show-menu" for="show-menu"><i class="fa fa-bars fa-2"></i></label>
@@ -41,5 +40,3 @@
 </ul>
 <div style="clear:both;"></div>
 </div> -->
-=======
->>>>>>> 1efb563ab7a47e84f57476036de10cd79cd7cff5
