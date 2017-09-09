@@ -61,12 +61,7 @@
                       if (empty($cari)){
                       $query = "SELECT kode,idbarang,namabrg,merkbrg,tipebrg FROM dbo.barang where tdkpakai = 0 ";
                       }else{
-                        $query = "SELECT kode,idbarang,namabrg,merkbrg,tipebrg FROM dbo.barang  where tdkpakai = 0  
-                      AND ( kode like '%$cari%' or namabrg like '%$cari%' ) ";
-                      $query = "SELECT kode,idbarang,namabrg,merkbrg,tipebrg FROM dbo.barang ";
-                      }else{
-                        $query = "SELECT kode,idbarang,namabrg,merkbrg,tipebrg FROM dbo.barang   
-                      WHERE ( kode like '%$cari%' or namabrg like '%$cari%' ) ";
+                        $query = "SELECT kode,idbarang,namabrg,merkbrg,tipebrg FROM dbo.barang  where tdkpakai = 0 AND ( kode like '%$cari%' or namabrg like '%$cari%' ) ";
                       }
                       
                       $statement = $mssql->db->prepare($query);

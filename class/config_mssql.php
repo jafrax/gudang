@@ -18,7 +18,7 @@ class pdo_dblib_mssql{
     // public function __construct($hostname, $port, $dbname, $username, $pwd){
     public function __construct(){
 
-        $this->hostname = 'suryapersada.com';
+        $this->hostname = '192.168.1.1';
         $this->port = 1433;
         $this->dbname = 'cps';
         $this->username = 'sa';
@@ -83,8 +83,4 @@ class pdo_dblib_mssql{
 
 }
 
-<<<<<<< HEAD
 ?>
-=======
-?>
->>>>>>> 1efb563ab7a47e84f57476036de10cd79cd7cff5

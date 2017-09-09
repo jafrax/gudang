@@ -10,7 +10,6 @@
   $id = $_GET['id'];
   $flg = $_GET['flg'];
   ?>
- ?>
   <link href="../asset/css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="../asset/css/menu_nav.css" rel="stylesheet" type="text/css">
 
