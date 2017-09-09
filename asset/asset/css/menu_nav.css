@@ -1,0 +1,190 @@
+#cssmenu ul { margin: 0; padding: 0;}
+#cssmenu li { margin: 0; padding: 0;}
+#cssmenu a { margin: 0; padding: 0;}
+#cssmenu ul {list-style: none;}
+#cssmenu a {text-decoration: none;}
+#cssmenu {
+    height: 40px;
+    background-color: #2c2c2c;
+    background-image: -moz-linear-gradient(top, #333333, #222222);
+    background-image: -ms-linear-gradient(top, #333333, #222222);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#333333), to(#222222));
+    background-image: -webkit-linear-gradient(top, #333333, #222222);
+    background-image: -o-linear-gradient(top, #333333, #222222);
+    background-image: linear-gradient(top, #333333, #222222);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#333333', endColorstr='#222222', GradientType=0);
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+
+
+#cssmenu > ul > li {
+    float: left;
+    position: relative;
+    padding-left: 35px
+}
+
+#cssmenu > ul > li > a {
+    #color: rgb(160,160,160);
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 40px;
+    padding: 15px 20px;
+    -webkit-transition: color .15s;
+    -moz-transition: color .15s;
+    -o-transition: color .15s;
+    transition: color .15s;
+}
+
+#cssmenu > ul > li > a:hover { 
+    color: rgb(160,160,160);
+}
+
+
+#cssmenu > ul > li > ul {
+    opacity: 0;
+    visibility: hidden;
+    padding: 5px 0 5px 0;
+    background-color: #ffffff;
+    text-align: left;
+    position: absolute;
+    top: 55px;
+    left: 50%;
+    margin-left: -70px;
+    width: 150px;
+-webkit-transition: all .3s .1s;
+   -moz-transition: all .3s .1s;
+     -o-transition: all .3s .1s;
+        transition: all .3s .1s;
+
+    border-color: #ccc;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-style: solid;
+    border-width: 1px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+}
+
+#cssmenu > ul > li:hover > ul {
+    opacity: 1;
+    top: 35px;
+    visibility: visible;
+    
+}
+
+#cssmenu > ul > li > ul:before{
+    content: '';
+    display: block;
+    border-color: transparent transparent rgb(250,250,250) transparent;
+    border-style: solid;
+    border-width: 10px;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    margin-left: -10px;
+}
+
+#cssmenu > ul ul > li { position: relative;}
+
+#cssmenu ul ul a{
+    color: rgb(50,50,50);
+    font-size: 13px;
+    background-color: #ffffff;
+    padding: 5px 8px 7px 16px;
+    display: block;
+-webkit-transition: background-color .1s;
+   -moz-transition: background-color .1s;
+     -o-transition: background-color .1s;
+        transition: background-color .1s;
+}
+
+#cssmenu ul ul a:hover {
+    background-color: #0088cc;
+}
+
+
+#cssmenu ul ul ul {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: -16px;
+    left: 160px;
+    padding: 5px 0 5px 0;
+    background-color: #ffffff;
+    text-align: left;
+    width: 150px;
+-webkit-transition: all .3s;
+   -moz-transition: all .3s;
+     -o-transition: all .3s;
+        transition: all .3s;
+        
+    border-color: #ccc;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-style: solid;
+    border-width: 1px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+}
+
+
+#cssmenu ul ul > li:hover > ul { opacity: 1; left: 160px; visibility: visible;}
+
+
+#cssmenu ul ul a:hover{
+    color: #ffffff;
+    background-color: #0088cc;
+}
+
+
+
+
+/*-----Responsive Menu ----*/
+body {margin: 0px;}
+#menu{background: #50B7DC;color: #FFF;height: 40px;border-bottom: 2px solid #DDD;box-shadow: 1px 2px 9px #B1B1B1;border-top: 2px solid #DDD;} 
+#menu ul,
+#menu li{margin:0 auto;padding:0 0;list-style:none}
+#menu ul{height:45px;width:1024px}
+#menu li{float:left;display:inline;position:relative;font:bold 1.2em Arial;text-shadow: 1px 2px 4px #838383;}
+#menu a{display: block;line-height: 40px;padding: 0 14px;text-decoration: none;color: #FFF;}
+#menu li a:hover{color: #E4E4E4;-webkit-transition: all .1s ease-in-out;-moz-transition: all .1s ease-in-out;-ms-transition: all .1s ease-in-out;-o-transition: all .1s ease-in-out;transition: all .1s ease-in-out;
+    background: #5FC6EB;}
+#menu input{display:none;margin:0 0;padding:0 0;width:80px;height:30px;opacity:0;cursor:pointer}
+#menu label{font:bold 30px Arial;display:none;width:35px;height:36px;line-height:36px;text-align:center}
+#menu label span{font-size:16px;position:absolute;left:35px}
+#menu ul.menus{height: auto;overflow: hidden;width: 170px;background: #50B7DC;position: absolute;z-index: 99;display: none;}
+#menu ul.menus li{display: block;width: 100%;font:normal 1.2em Arial;text-transform: none;
+text-shadow: none;border-bottom: 1px dashed #31AFDB;}
+
+#menu ul.menus a{color: #FFF;line-height: 35px;}
+#menu li:hover ul.menus{display:block}
+#menu ul.menus a:hover{background: #5FC6EB;color: #FFF;-webkit-transition: all .1s ease-in-out;
+-moz-transition: all .1s ease-in-out;-ms-transition: all .1s ease-in-out;-o-transition: all .1s ease-in-out;
+transition: all .1s ease-in-out;}
+
+@media screen and (max-width: 800px){
+#menu{position:relative}
+#menu ul{background:#111;position:absolute;top:100%;right:0;left:0;z-index:3;height:auto;display:none}
+#menu ul.menus{width:100%;position:static;padding-left:20px}
+#menu li{display:block;float:none;width:auto; font:normal 1.2em Arial;}
+#menu input,#menu label{position:absolute;top:0;left:0;display:block}
+#menu input{z-index:4}
+#menu input:checked + label{color:white}
+#menu input:checked ~ ul{display:block}
+}
+
+
+/*-------and menu--------------- */
