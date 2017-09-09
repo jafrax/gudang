@@ -9,8 +9,13 @@
   require_once "../class/config_mssql.php";
   $mssql = new pdo_dblib_mssql();
   $id = $_GET['id'];
+<<<<<<< HEAD
   $flg = $_GET['flg'];
   ?>
+=======
+
+ ?>
+>>>>>>> 1efb563ab7a47e84f57476036de10cd79cd7cff5
   <link href="../asset/css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="../asset/css/menu_nav.css" rel="stylesheet" type="text/css">
 
@@ -85,10 +90,14 @@
 
                           <tr>
                               <td width="30%">Kode</td><td width="1%">:</td>
+<<<<<<< HEAD
                               <td colspan="6">
                               <a href="<?php echo $addr_server;?>appl/barang_img.php?id=<?php echo $_GET['id'];?>"> 
 
                               <font color="red"><?php echo $row['kode'];?></font></a></td>
+=======
+                              <td colspan="6"><?php echo $row['kode'];?></td>
+>>>>>>> 1efb563ab7a47e84f57476036de10cd79cd7cff5
                           </tr>
                           <tr>
                               <td width="30%">ID Barang</td><td width="1%">:</td>
@@ -136,21 +145,31 @@
                     $file_ext = substr($filename, strripos($filename, '.')); // get file name
                     $filesize = $_FILES["file"]["size"];
                     $allowed_file_types = array('.JPEG','.jpg','.png','JPE');  
+<<<<<<< HEAD
                     $images = $id.'-'.md5($file_basename) . $file_ext;
+=======
+                    $images = md5($file_basename) . $file_ext;
+>>>>>>> 1efb563ab7a47e84f57476036de10cd79cd7cff5
 
                     
 
                     if (in_array($file_ext,$allowed_file_types) && ($filesize < 10000000))
                     {   
                         // Rename file
+<<<<<<< HEAD
                         $newfilename = $id.'-'.md5($file_basename) . $file_ext;
                         if (file_exists("/var/www/html/produk_image/" . $newfilename))
+=======
+                        $newfilename = md5($file_basename) . $file_ext;
+                        if (file_exists("/home/ubuntu/www/produk_image/" . $newfilename))
+>>>>>>> 1efb563ab7a47e84f57476036de10cd79cd7cff5
                         {
                             // file already exists error
                             echo "You have already uploaded this file.";
                         }
                         else
                         {       
+<<<<<<< HEAD
                             move_uploaded_file($_FILES["file"]["tmp_name"], "/var/www/html/produk_image/" . $newfilename);
 
                            
@@ -169,6 +188,22 @@
                                   echo "File uploaded successfully."; 
 
                             
+=======
+                            move_uploaded_file($_FILES["file"]["tmp_name"], "/home/ubuntu/www/produk_image/" . $newfilename);
+                            echo "File uploaded successfully."; 
+
+                              try {
+
+                                  $query = "INSERT dbo.imagebarang (kodebrg,image) values ('$id','$images') ";
+                                  $statement = $mssql->db->prepare($query);
+                                  $statement->execute();
+                                  // var_dump($statement);
+
+                              } catch(PDOException $e) {
+                                      echo $e->getMessage();
+                              }
+
+>>>>>>> 1efb563ab7a47e84f57476036de10cd79cd7cff5
                         }
                     }
                     elseif (empty($file_basename))
@@ -186,11 +221,14 @@
                         // file type error
                         echo "Only these file typs are allowed for upload: " . implode(', ',$allowed_file_types);
                         unlink($_FILES["file"]["tmp_name"]);
+<<<<<<< HEAD
 
                          $query = "DELETE FROM dbo.imagebarang WHERE image = '$images' ";
                                   $statement = $mssql->db->prepare($query);
                                   $statement->execute();
 
+=======
+>>>>>>> 1efb563ab7a47e84f57476036de10cd79cd7cff5
                     }
                     }
 

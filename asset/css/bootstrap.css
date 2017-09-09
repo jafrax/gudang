@@ -287,7 +287,11 @@ a:hover {
 p {
   margin: 0 0 9px;
   font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Helvetica, Arial, sans-serif;
+<<<<<<< HEAD
   font-size: 13px;
+=======
+  font-size: 14px;
+>>>>>>> 1efb563ab7a47e84f57476036de10cd79cd7cff5
   line-height: 20px;
 }
 p small {

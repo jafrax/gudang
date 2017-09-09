@@ -83,4 +83,8 @@ class pdo_dblib_mssql{
 
 }
 
+<<<<<<< HEAD
 ?>
+=======
+?>
+>>>>>>> 1efb563ab7a47e84f57476036de10cd79cd7cff5

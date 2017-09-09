@@ -3,17 +3,27 @@
 <html lang="en">
    <head>
   <?php 
+<<<<<<< HEAD
   session_start();
+=======
+>>>>>>> 1efb563ab7a47e84f57476036de10cd79cd7cff5
   include '../script_awal.php';
   include $doc_root.'bs_meta.php';   
   include $doc_root.'bs_css.php';
   require_once "../class/config_mssql.php";
   $mssql = new pdo_dblib_mssql();
+<<<<<<< HEAD
   if (isset($_GET['cari']))
   $cari = $_GET['cari'];
   ?>
   <link href="../asset/css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="../asset/css/menu_nav.css" rel="stylesheet" type="text/css">
+=======
+  $cari = $_GET['cari'];
+  ?>
+  <link href="asset/css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="asset/css/menu_nav.css" rel="stylesheet" type="text/css">
+>>>>>>> 1efb563ab7a47e84f57476036de10cd79cd7cff5
   </head>
  <body>
     <?php include $doc_root.'header.php';?>
@@ -59,10 +69,17 @@
                   <?php
                       
                       if (empty($cari)){
+<<<<<<< HEAD
                       $query = "SELECT kode,idbarang,namabrg,merkbrg,tipebrg FROM dbo.barang where tdkpakai = 0 ";
                       }else{
                         $query = "SELECT kode,idbarang,namabrg,merkbrg,tipebrg FROM dbo.barang  where tdkpakai = 0  
                       AND ( kode like '%$cari%' or namabrg like '%$cari%' ) ";
+=======
+                      $query = "SELECT kode,idbarang,namabrg,merkbrg,tipebrg FROM dbo.barang ";
+                      }else{
+                        $query = "SELECT kode,idbarang,namabrg,merkbrg,tipebrg FROM dbo.barang   
+                      WHERE ( kode like '%$cari%' or namabrg like '%$cari%' ) ";
+>>>>>>> 1efb563ab7a47e84f57476036de10cd79cd7cff5
                       }
                       
                       $statement = $mssql->db->prepare($query);

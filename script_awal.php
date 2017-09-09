@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 if(!isset($_SESSION)) 
     { 
         session_start(); 
@@ -6,6 +7,12 @@ if(!isset($_SESSION))
 
  // error_reporting(0);
  error_reporting(E_ALL ^ (E_NOTICE | E_WARNING));
+=======
+session_start();
+// error_reporting(1);
+// error_reporting(E_ALL ^ (E_NOTICE | E_WARNING));
+
+>>>>>>> 1efb563ab7a47e84f57476036de10cd79cd7cff5
 
 $doc_root = $_SERVER['DOCUMENT_ROOT'].'/gudang/';
 $doc_root_class = $_SERVER['DOCUMENT_ROOT'].'/gudang/class/';
@@ -47,4 +54,8 @@ if(!isset($_SESSION['username'])){
 //     header("Location: logout.php");
 // }
 
+<<<<<<< HEAD
 ?>
+=======
+?>
+>>>>>>> 1efb563ab7a47e84f57476036de10cd79cd7cff5

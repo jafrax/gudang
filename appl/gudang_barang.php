@@ -3,7 +3,10 @@
 <html lang="en">
    <head>
   <?php 
+<<<<<<< HEAD
   session_start();
+=======
+>>>>>>> 1efb563ab7a47e84f57476036de10cd79cd7cff5
   include '../script_awal.php';
   include $doc_root.'bs_meta.php';   
   include $doc_root.'bs_css.php';
@@ -62,10 +65,17 @@
                       
                       if (empty($cari)){
                       $query = "SELECT b.jumlah,a.kode,a.idbarang,a.namabrg,a.merkbrg,a.tipebrg FROM dbo.barang a inner join dbo.stokperlok b ON a.kode=b.kd_barang 
+<<<<<<< HEAD
                       WHERE a.tdkpakai = 0 AND b.kd_lokasi ='$id' ";
                       }else{
                         $query = "SELECT b.jumlah,a.kode,a.idbarang,a.namabrg,a.merkbrg,a.tipebrg FROM dbo.barang a inner join dbo.stokperlok b ON a.kode=b.kd_barang 
                       WHERE a.tdkpakai = 0 AND b.kd_lokasi ='$id' and ( kode like '%$cari%' or namabrg like '%$cari%' ) ";
+=======
+                      WHERE b.kd_lokasi ='$id' ";
+                      }else{
+                        $query = "SELECT b.jumlah,a.kode,a.idbarang,a.namabrg,a.merkbrg,a.tipebrg FROM dbo.barang a inner join dbo.stokperlok b ON a.kode=b.kd_barang 
+                      WHERE b.kd_lokasi ='$id' and ( kode like '%$cari%' or namabrg like '%$cari%' ) ";
+>>>>>>> 1efb563ab7a47e84f57476036de10cd79cd7cff5
                       }
                       
                       $statement = $mssql->db->prepare($query);
